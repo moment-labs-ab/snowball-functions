@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Supabase Functions",
+            "type": "node",
+            "request": "attach",
+            "address": "127.0.0.1",
+            "port": 8083,
+            // where your functions live locally
+            "localRoot": "${workspaceFolder}/supabase/functions/",
+            // where the CLI mounts them at runtime
+            "remoteRoot": "/home/deno/functions/",
+            "sourceMaps": true,
+            "restart": true,
+            "timeout": 1000000
+        }
+    ]
+}
